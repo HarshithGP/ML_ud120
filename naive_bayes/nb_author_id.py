@@ -36,6 +36,7 @@ pred = clf.predict(features_test)
 print "Prediction time: ", round(time()-t1,3), "s"
 
 accuracy = clf.score(features_test, labels_test)
-print "Accuracy = ",accuracy
+accuracy = accuracy * 100
+print "Accuracy = %0.2f"%accuracy,"%"
 #print " Accuracy Score =", accuracy_score(pred, labels_test)
 
